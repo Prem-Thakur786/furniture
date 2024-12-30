@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Time and Location</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="time-container">
+      <span id="us-time"></span>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <button onclick="showLocation()">Location</button>
+    <button onclick="showConservation()">Conservation</button>
+    <button onclick="showPrice()">Price</button>
+  </nav>
+
+  <!-- Location Section -->
+  <div id="location-section" class="content-area" style="display: none;">
+    <h2>USA Locations</h2>
+    <div class="content-container">
+      <!-- Location buttons will be dynamically added here -->
+    </div>
+  </div>
+
+  <!-- Conservation Section -->
+  <div id="conservation-section" class="content-area" style="display: none;">
+    <div class="box" onclick="copyToClipboard('Eco-friendly Materials')">which size are you looking for?</div>
+    <div class="box" onclick="copyToClipboard('Sustainable Production')">Our warehouse is located in Sanford NC</div>
+    <div class="box" onclick="copyToClipboard('Factory-Packed Products')">Please send you Full Address and Phone Number</div>
+    <div class="box" onclick="copyToClipboard('Recycling Initiatives')">Ask the customer City Name and then check Avialable Delivery Day?</div>
+    <div class="box" onclick="copyToClipboard('Carbon Footprint Reduction')">1 Hour Delivery boy contact you!!</div>
+    <div class="box" onclick="copyToClipboard('price range')">What price range are you looking for to buy a bed?</div>
+  </div>
+
+  <!-- Price Section -->
+  <div id="price-section" class="content-area" style="display: none;">
+    <div class="price-buttons">
+      <button onclick="setPrice('Twin Set')">Twin Set</button>
+      <button onclick="setPrice('Full Set')">Full Set</button>
+      <button onclick="setPrice('Queen Set')">Queen Set</button>
+      <button onclick="setPrice('King Set')">King Set</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
