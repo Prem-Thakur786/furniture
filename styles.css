@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .time-container {
+    font-size: 16px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+  }
+  
+  .navbar button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .navbar button:hover {
+    background-color: #666;
+  }
+  
+  .content-area {
+    padding: 20px;
+  }
+  
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .content-container div {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  
+  .content-container div:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+  }
+  
+  .box:hover {
+    background-color: #45a049;
+  }
+  
+  .price-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .price-buttons button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 20px 100px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 51, 255, 0.7);
+  }
+
+
+  @keyframes glow {
+    0% {
+        box-shadow: 0 0 5px  rgba(0, 51, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 20px  rgba(0, 51, 255, 0.7);
+    }
+  }
+  
+
+
+
+
+  
+  .price-buttons button:hover {
+    background-color: #006f8a;
+  }
+/* Notification box styles */
+.notification-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  animation: glow 1.5s ease-in-out infinite alternate;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+  }
+}
